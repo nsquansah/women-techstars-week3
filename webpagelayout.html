@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.red-header {
+    background-color:red ;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brown-column {
+    background-color: #ffa07a;
+    color: white;
+}
+
+.blue-column {
+    background-color: #87CEEB ;
+    color: white;
+}
+
+.red-footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="red-header">Header</header>
+        <div class="content">
+            <div class="column brown-column">
+                <p><h1>left</h1><br><br> fixed width <br> 100% height</p>
+            </div>
+            <div class="column blue-column"><h1>middle</h1><br><br> 100% width<br>100% height</div>
+            <div class="column brown-column">
+                <p>
+                    <h1>right</h1><br><br>
+                    fixed wdith<br> 100% height
+                </p>
+            </div>
+        </div>
+        <footer class="red-footer">Footer fixed height</footer>
+    </div>
+</body>
+</html>
